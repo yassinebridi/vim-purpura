@@ -79,7 +79,7 @@ let s:cdLeftLight = {'gui': '#ff00ff', 'cterm': s:cterm03, 'cterm256': '238'}
 
 let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
 let s:cdPopupBack = {'gui': '#3d0042', 'cterm': s:cterm01, 'cterm256': '236'}
-let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
+let s:cdPopupHighlightBlue = {'gui': '#1f0121', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#340138', 'cterm': s:cterm03, 'cterm256': '237'}
 
 let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
@@ -112,7 +112,7 @@ let s:cdDarkBlue = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue = {'gui': '#73bbf5', 'cterm': s:cterm0C, 'cterm256': '117'}
 if g:purpura_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdViolet = {'gui': '#6e1fa1', 'cterm': s:cterm0B, 'cterm256': '65'}
-let s:cdPinkGreen = {'gui': '#4EC9B0', 'cterm': s:cterm0F, 'cterm256': '43'}
+let s:cdPinkGreen = {'gui': '#acff59', 'cterm': s:cterm0F, 'cterm256': '43'}
 let s:cdLightGreen = {'gui': '#B5CEA8', 'cterm': s:cterm09, 'cterm256': '151'}
 let s:cdRed = {'gui': '#F44747', 'cterm': s:cterm08, 'cterm256': '203'}
 let s:cdLightYellow = {'gui': '#ede093', 'cterm': s:cterm0F, 'cterm256': '173'}
