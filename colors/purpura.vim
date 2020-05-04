@@ -114,7 +114,7 @@ if g:purpura_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdViolet = {'gui': '#6e1fa1', 'cterm': s:cterm0B, 'cterm256': '65'}
 let s:cdPinkGreen = {'gui': '#acff59', 'cterm': s:cterm0F, 'cterm256': '43'}
 let s:cdLightGreen = {'gui': '#B5CEA8', 'cterm': s:cterm09, 'cterm256': '151'}
-let s:cdRed = {'gui': '#d83232', 'cterm': s:cterm08, 'cterm256': '203'}
+let s:cdRed = {'gui': '#ff00ff', 'cterm': s:cterm08, 'cterm256': '203'}
 let s:cdLightYellow = {'gui': '#ede093', 'cterm': s:cterm0F, 'cterm256': '173'}
 let s:cdLightRed = {'gui': '#D16969', 'cterm': s:cterm08, 'cterm256': '167'}
 if g:purpura_conservative | let s:cdLightRed = s:cdLightYellow | endif
@@ -137,7 +137,8 @@ call <sid>hi('DiffChange', {}, s:cdDiffRedDark, 'none', {})
 call <sid>hi('DiffDelete', {}, s:cdDiffRedLight, 'none', {})
 call <sid>hi('DiffText', {}, s:cdDiffRedLight, 'none', {})
 call <sid>hi('EndOfBuffer', s:cdLineNumber, s:cdBack, 'none', {})
-call <sid>hi('ErrorMsg', s:cdRed, s:cdBack, 'none', {})
+
+call <sid>hi('ErrorMsg', s:cdRed, s:cdBack, 'bold', {})
 call <sid>hi('VertSplit', s:cdSplitDark, s:cdBack, 'none', {})
 call <sid>hi('Folded', s:cdLeftLight, s:cdLeftDark, 'underline', {})
 call <sid>hi('FoldColumn', s:cdLineNumber, s:cdBack, 'none', {})
