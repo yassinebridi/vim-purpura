@@ -77,8 +77,8 @@ let s:cdLeftDark = {'gui': '#1e0030', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdLeftMid = {'gui': '#1e0030', 'cterm': s:cterm03, 'cterm256': '237'}
 let s:cdLeftLight = {'gui': '#ff00ff', 'cterm': s:cterm03, 'cterm256': '238'}
 
-let s:cdPopupFront = {'gui': '#dd80ff', 'cterm': s:cterm06, 'cterm256': '250'}
-let s:cdPopupBack = {'gui': '#90059c', 'cterm': s:cterm01, 'cterm256': '236'}
+let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
+let s:cdPopupBack = {'gui': '#610369', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdPopupHighlightBlue = {'gui': '#1f0121', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#610369', 'cterm': s:cterm03, 'cterm256': '237'}
 
