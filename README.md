@@ -1,6 +1,6 @@
 # Purpura colorscheme for [vim](https://github.com/vim/vim)
 
-> A [purple](https://github.com/yassinebridi/tmux-purpura) theme for [tmux](https://github.com/tmux/tmux/wiki)
+> A [purple](https://github.com/yassinebridi/vim-purpura) theme for [vim](https://github.com/vim/vim)
 
 ![Screenshot](./screenshot.png)
 
