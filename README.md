@@ -48,5 +48,7 @@ it's advised to install this plugin:
 Plug 'maxmellon/vim-jsx-pretty'
 ```
 ## WIP
-- This is optimized for react/typescript developments, it partialy works for other languages, but not as good
-- Better support for other types of terminals
+- This is optimized for react/typescript developments, it partialy works for other languages, but not as good.
+- Better support for other types of colors.
+- Better colors for airline.
+- Support lightline.
