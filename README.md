@@ -4,9 +4,16 @@
 
 ![Screenshot](./screenshot.png)
 
+#### Airline
+![Airline](./airline.png)
+---
+
 All the heavy work is done by [vim-code-dark](https://github.com/tomasiser/vim-code-dark)
 
 A similar theme for tmux is here: [tmux-purpura](https://github.com/yassinebridi/tmux-purpura)
+
+---
+Please read [WIP](#wip)
 
 ## Install
 ### 1) Download
@@ -49,6 +56,5 @@ Plug 'maxmellon/vim-jsx-pretty'
 ```
 ## WIP
 - This is optimized for react/typescript developments, it partialy works for other languages, but not as good.
-- Better support for other types of colors.
-- Better colors for airline.
+- Better support cterm colors.
 - Support lightline.
