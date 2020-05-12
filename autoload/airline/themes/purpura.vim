@@ -77,7 +77,7 @@ let g:airline#themes#purpura#palette.insert_modified.airline_warning = s:Warning
 
 " Replace:
 
-let s:R1 = [ s:cdBack.gui, s:cdRed.gui, s:cdBack.cterm, s:cdRed.cterm, 'none' ]
+let s:R1 = [ s:cdFront.gui, s:cdRed.gui, s:cdFront.cterm, s:cdRed.cterm, 'none' ]
 let s:R2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
 let s:R3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
 let s:RM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
