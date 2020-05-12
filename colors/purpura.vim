@@ -1,6 +1,3 @@
-" Vim Code Dark (color scheme)
-" https://github.com/tomasiser/vim-code-dark
-
 scriptencoding utf-8
 
 set background=dark
