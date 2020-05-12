@@ -40,9 +40,9 @@ let s:cdFrontGray = {'gui': '#D4D4D4', 'cterm': (g:purpura_term256 ? '188' : s:c
 let s:cdBack = {'gui': '#1e0030', 'cterm': (g:purpura_term256 ? '234' : s:cterm00)}
 let s:cdSelection = {'gui': '#471469', 'cterm': (g:purpura_term256 ? '24' : s:cterm01)}
 
-let s:cdBlue = {'gui': '#6710e0', 'cterm': (g:purpura_term256 ? '32' : s:cterm0D)}
-let s:cdLightBlue = {'gui': '#53cf51', 'cterm': (g:purpura_term256 ? '75' : s:cterm0C)}
-let s:cdYellow = {'gui': '#ecc440', 'cterm': (g:purpura_term256 ? '214' : s:cterm0A)}
+let s:cdBlue = {'gui': '#7e21ff', 'cterm': (g:purpura_term256 ? '32' : s:cterm0D)}
+let s:cdYellow = {'gui': '#ecc440', 'cterm': (g:purpura_term256 ? '75' : s:cterm0C)}
+let s:cdGreen = {'gui': '#53cf51', 'cterm': (g:purpura_term256 ? '214' : s:cterm0A)}
 let s:cdRed = {'gui': '#EC4067', 'cterm': (g:purpura_term256 ? '203' : s:cterm08)}
 
 let s:cdDarkDarkDark = {'gui': '#390359', 'cterm': (g:purpura_term256 ? '235' : s:cterm01)}
@@ -65,7 +65,7 @@ let g:airline#themes#purpura#palette.normal_modified.airline_warning = s:Warning
 
 " Insert:
 
-let s:I1 = [ s:cdBack.gui, s:cdYellow.gui, s:cdBack.cterm, s:cdYellow.cterm, 'none' ]
+let s:I1 = [ s:cdBack.gui, s:cdGreen.gui, s:cdBack.cterm, s:cdGreen.cterm, 'none' ]
 let s:I2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
 let s:I3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
 let s:IM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
@@ -77,7 +77,7 @@ let g:airline#themes#purpura#palette.insert_modified.airline_warning = s:Warning
 
 " Replace:
 
-let s:R1 = [ s:cdBack.gui, s:cdYellow.gui, s:cdBack.cterm, s:cdYellow.cterm, 'none' ]
+let s:R1 = [ s:cdBack.gui, s:cdRed.gui, s:cdBack.cterm, s:cdRed.cterm, 'none' ]
 let s:R2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
 let s:R3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
 let s:RM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
@@ -89,7 +89,7 @@ let g:airline#themes#purpura#palette.replace_modified.airline_warning = s:Warnin
 
 " Visual:
 
-let s:V1 = [ s:cdLightBlue.gui, s:cdDark.gui, s:cdLightBlue.cterm, s:cdDark.cterm, 'none' ]
+let s:V1 = [ s:cdBack.gui, s:cdYellow.gui, s:cdBack.cterm, s:cdYellow.cterm, 'none' ]
 let s:V2 = [ s:cdFront.gui, s:cdDarkDark.gui, s:cdFront.cterm, s:cdDarkDark.cterm, 'none' ]
 let s:V3 = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none' ]
 let s:VM = [ s:cdFront.gui, s:cdDarkDarkDark.gui, s:cdFront.cterm, s:cdDarkDarkDark.cterm, 'none']
