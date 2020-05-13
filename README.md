@@ -8,8 +8,6 @@
 ![Airline](./airline.png)
 ---
 
-All the heavy work is done by [vim-code-dark](https://github.com/tomasiser/vim-code-dark)
-
 A similar theme for tmux is here: [tmux-purpura](https://github.com/yassinebridi/tmux-purpura)
 
 ---
