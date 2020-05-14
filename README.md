@@ -34,17 +34,32 @@ then install the plugin:
 ### 2) Enable in `.vimrc`/`init.vim`
 Add the following line to your `.vimrc` or `init.vim`:
 
-```
+```vim
 colorscheme purpura
 ```
-
+Make sure to have these lines too in your vimrc, if you don't already:
+```vim
+set background=dark
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
 If you have [`vim-airline`](https://github.com/vim-airline/vim-airline), you can also enable the provided theme:
 
 ```
 let g:airline_theme = 'purpura'
 ```
-then exit vim, and reopen or simply source your `.vimrc`/`init.vim`.
+
+If you prefere [`vim-crystalline`](https://github.com/rbong/vim-crystalline), you can just change your settings to be like so:
+
+```vim
+let g:crystalline_theme = 'purpura'
 ```
+for [`vim-lightline`](https://github.com/itchyny/lightline.vim)
+read [`WIP`](#wip)
+
+then exit vim, and reopen or simply source your `.vimrc`/`init.vim`.
+```bash
 :so %
 ```
 ## For React/JSX/TSX developers
