@@ -7,7 +7,6 @@ if exists("syntax_on")
 endif
 let g:colors_name="purpura"
 
-" Highlighting function (inspiration from https://github.com/chriskempson/base16-vim)
 if &t_Co >= 256
     let g:purpura_term256=1
 elseif !exists("g:purpura_term256")
@@ -31,72 +30,45 @@ endfun
 " ------------------
 " Color definitions:
 " ------------------
-
-" Terminal colors (base16):
-let s:cterm00 = "00"
-let s:cterm03 = "08"
-let s:cterm05 = "07"
-let s:cterm07 = "15"
-let s:cterm08 = "01"
-let s:cterm0A = "03"
-let s:cterm0B = "02"
-let s:cterm0C = "06"
-let s:cterm0D = "04"
-let s:cterm0E = "05"
-if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
-else
-  let s:cterm01 = "00"
-  let s:cterm02 = "08"
-  let s:cterm04 = "07"
-  let s:cterm06 = "07"
-  let s:cterm09 = "06"
-  let s:cterm0F = "03"
-endif
-
+"
 " General appearance colors:
 " (some of them may be unused)
 
 let s:cdNone = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdFront = {'gui': '#f0f0f0', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdBack = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdFront = {'gui': '#f0f0f0', 'cterm': 'NONE', 'cterm256': '255'}
+let s:cdBack = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': '54'}
 
-let s:cdTabCurrent = {'gui': '#5e0066', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdTabOther = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdTabOutside = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdTabCurrent = {'gui': '#5e0066', 'cterm': 'NONE', 'cterm256': '53'}
+let s:cdTabOther = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': '54'}
+let s:cdTabOutside = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': '54'}
 
-let s:cdLeftDark = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLeftMid = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLeftLight = {'gui': '#ff00ff', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdLeftDark = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': '54'}
+let s:cdLeftMid = {'gui': '#1e0030', 'cterm': 'NONE', 'cterm256': '54'}
+let s:cdLeftLight = {'gui': '#ff00ff', 'cterm': 'NONE', 'cterm256': '201'}
 
-let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdPopupBack = {'gui': '#610369', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdPopupHighlightBlue = {'gui': '#1f0121', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdPopupHighlightGray = {'gui': '#610369', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': 'NONE', 'cterm256': '250'}
+let s:cdPopupBack = {'gui': '#610369', 'cterm': 'NONE', 'cterm256': '53'}
+let s:cdPopupHighlightBlue = {'gui': '#1f0121', 'cterm': 'NONE', 'cterm256': '54'}
+let s:cdPopupHighlightGray = {'gui': '#610369', 'cterm': 'NONE', 'cterm256': '53'}
 
-let s:cdSplitLight = {'gui': '#898989', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdSplitDark = {'gui': '#444444', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdSplitThumb = {'gui': '#424242', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdSplitLight = {'gui': '#898989', 'cterm': 'NONE', 'cterm256': '245'}
+let s:cdSplitDark = {'gui': '#444444', 'cterm': 'NONE', 'cterm256': '238'}
+let s:cdSplitThumb = {'gui': '#424242', 'cterm': 'NONE', 'cterm256': '238'}
 
-let s:cdCursorDarkDark = {'gui': '#25003d', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdCursorDark = {'gui': '#51504F', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdCursorLight = {'gui': '#AEAFAD', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdSelection = {'gui': '#471469', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLineNumber = {'gui': '#480275', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdCursorDarkDark = {'gui': '#25003d', 'cterm': 'NONE', 'cterm256': '54'}
+let s:cdCursorDark = {'gui': '#51504F', 'cterm': 'NONE', 'cterm256': '239'}
+let s:cdCursorLight = {'gui': '#AEAFAD', 'cterm': 'NONE', 'cterm256': '145'}
+let s:cdSelection = {'gui': '#471469', 'cterm': 'NONE', 'cterm256': '55'}
+let s:cdLineNumber = {'gui': '#480275', 'cterm': 'NONE', 'cterm256': '55'}
 
-let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdDiffRedLight = {'gui': '#6F1313', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': 'NONE', 'cterm256': '52'}
+let s:cdDiffRedLight = {'gui': '#6F1313', 'cterm': 'NONE', 'cterm256': '52'}
+let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': 'NONE', 'cterm256': '09'}
+let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': 'NONE', 'cterm256': '237'}
+let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': 'NONE', 'cterm256': '85'}
 
-let s:cdSearchCurrent = {'gui': '#ffec8c', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdSearch = {'gui': '#9f44db', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdSearchCurrent = {'gui': '#ffec8c', 'cterm': 'NONE', 'cterm256': '228'}
+let s:cdSearch = {'gui': '#9f44db', 'cterm': 'NONE', 'cterm256': '134'}
 
 " Syntax colors:
 
@@ -104,21 +76,21 @@ if !exists("g:purpura_conservative")
     let g:purpura_conservative=0
 endif
 
-let s:cdGray = {'gui': '#808080', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdDarkBlue = {'gui': '#223E55', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLightBlue = {'gui': '#73bbf5', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdGray = {'gui': '#808080', 'cterm': 'NONE', 'cterm256': '08'}
+let s:cdDarkBlue = {'gui': '#223E55', 'cterm': 'NONE', 'cterm256': '73'}
+let s:cdLightBlue = {'gui': '#73bbf5', 'cterm': 'NONE', 'cterm256': '111'}
 if g:purpura_conservative | let s:cdLightBlue = s:cdFront | endif
-let s:cdViolet = {'gui': '#8924c9', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdPinkGreen = {'gui': '#acff59', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLightGreen = {'gui': '#B5CEA8', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdRed = {'gui': '#F44747', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLightYellow = {'gui': '#ede093', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdLightRed = {'gui': '#D16969', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdViolet = {'gui': '#8924c9', 'cterm': 'NONE', 'cterm256': '92'}
+let s:cdPinkGreen = {'gui': '#acff59', 'cterm': 'NONE', 'cterm256': '155'}
+let s:cdLightGreen = {'gui': '#B5CEA8', 'cterm': 'NONE', 'cterm256': '151'}
+let s:cdRed = {'gui': '#F44747', 'cterm': 'NONE', 'cterm256': '203'}
+let s:cdLightYellow = {'gui': '#ede093', 'cterm': 'NONE', 'cterm256': '186'}
+let s:cdLightRed = {'gui': '#D16969', 'cterm': 'NONE', 'cterm256': '167'}
 if g:purpura_conservative | let s:cdLightRed = s:cdLightYellow | endif
-let s:cdVeryLightGreenOrange = {'gui': '#D7BA7D', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdVeryLightGreen = {'gui': '#ffc363', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdVeryLightGreenOrange = {'gui': '#D7BA7D', 'cterm': 'NONE', 'cterm256': '179'}
+let s:cdVeryLightGreen = {'gui': '#ffc363', 'cterm': 'NONE', 'cterm256': '215'}
 if g:purpura_conservative | let s:cdVeryLightGreen = s:cdFront | endif
-let s:cdPink = {'gui': '#ff00d4', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdPink = {'gui': '#ff00d4', 'cterm': 'NONE', 'cterm256': '200'}
 if g:purpura_conservative | let s:cdPink = s:cdPink | endif
 
 " Vim editor colors
