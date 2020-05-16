@@ -2,52 +2,25 @@ scriptencoding utf-8
 
 let g:airline#themes#purpura#palette = {}
 
-" Terminal colors (base16):
-let s:cterm00 = "00"
-let s:cterm03 = "08"
-let s:cterm05 = "07"
-let s:cterm07 = "15"
-let s:cterm08 = "01"
-let s:cterm0A = "03"
-let s:cterm0B = "02"
-let s:cterm0C = "06"
-let s:cterm0D = "04"
-let s:cterm0E = "05"
-if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
-else
-  let s:cterm01 = "00"
-  let s:cterm02 = "08"
-  let s:cterm04 = "07"
-  let s:cterm06 = "07"
-  let s:cterm09 = "06"
-  let s:cterm0F = "03"
-endif
-
 if &t_Co >= 256
     let g:purpura_term256=1
 elseif !exists("g:purpura_term256")
     let g:purpura_term256=0
 endif
 
-let s:cdFront = {'gui': '#D4D4D4', 'cterm':  (g:purpura_term256 ? '15' : s:cterm07)}
-let s:cdFrontGray = {'gui': '#D4D4D4', 'cterm': (g:purpura_term256 ? '188' : s:cterm05)}
-let s:cdBack = {'gui': '#1e0030', 'cterm': (g:purpura_term256 ? '234' : s:cterm00)}
-let s:cdSelection = {'gui': '#471469', 'cterm': (g:purpura_term256 ? '24' : s:cterm01)}
+let s:cdFront = {'gui': '#D4D4D4', 'cterm':  (g:purpura_term256 ? '188' : 'none')}
+let s:cdFrontGray = {'gui': '#D4D4D4', 'cterm': (g:purpura_term256 ? '188' : 'none')}
+let s:cdBack = {'gui': '#1e0030', 'cterm': (g:purpura_term256 ? '54' : 'none')}
+let s:cdSelection = {'gui': '#471469', 'cterm': (g:purpura_term256 ? '55' : 'none')}
 
-let s:cdBlue = {'gui': '#7e21ff', 'cterm': (g:purpura_term256 ? '32' : s:cterm0D)}
-let s:cdYellow = {'gui': '#ecc440', 'cterm': (g:purpura_term256 ? '75' : s:cterm0C)}
-let s:cdGreen = {'gui': '#53cf51', 'cterm': (g:purpura_term256 ? '214' : s:cterm0A)}
-let s:cdRed = {'gui': '#EC4067', 'cterm': (g:purpura_term256 ? '203' : s:cterm08)}
+let s:cdBlue = {'gui': '#7e21ff', 'cterm': (g:purpura_term256 ? '93' : 'none')}
+let s:cdYellow = {'gui': '#ecc440', 'cterm': (g:purpura_term256 ? '220' : 'none')}
+let s:cdGreen = {'gui': '#53cf51', 'cterm': (g:purpura_term256 ? '77' : 'none')}
+let s:cdRed = {'gui': '#EC4067', 'cterm': (g:purpura_term256 ? '167' : 'none')}
 
-let s:cdDarkDarkDark = {'gui': '#390359', 'cterm': (g:purpura_term256 ? '235' : s:cterm01)}
-let s:cdDarkDark = {'gui': '#5e0791', 'cterm': (g:purpura_term256 ? '236' : s:cterm02)}
-let s:cdDark = {'gui': '#7b18b5', 'cterm': (g:purpura_term256 ? '237' : s:cterm03)}
+let s:cdDarkDarkDark = {'gui': '#390359', 'cterm': (g:purpura_term256 ? '55' : 'none')}
+let s:cdDarkDark = {'gui': '#5e0791', 'cterm': (g:purpura_term256 ? '55' : 'none')}
+let s:cdDark = {'gui': '#7b18b5', 'cterm': (g:purpura_term256 ? '134' : 'none')}
 
 let s:Warning = [ s:cdRed.gui, s:cdDarkDark.gui, s:cdRed.cterm, s:cdDarkDark.cterm, 'none']
 
