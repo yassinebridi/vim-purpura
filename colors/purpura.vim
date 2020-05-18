@@ -397,3 +397,9 @@ call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('luaFuncKeyword', s:cdPink, {}, 'none', {})
 call <sid>hi('luaLocal', s:cdPink, {}, 'none', {})
 call <sid>hi('luaBuiltIn', s:cdPink, {}, 'none', {})
+
+" Rust:
+call <sid>hi('rustAttribute', s:cdPinkGreen, {}, 'none', {})
+call <sid>hi('rustFuncName', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('rustIdentifier', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('rustType', s:cdPinkGreen, {}, 'none', {})
