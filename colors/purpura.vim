@@ -29,12 +29,12 @@ fun! <sid>hi(group, fg, bg, attr, sp)
 endfun
 
 " Transparent background
-let g:purpura_tans = get(g:, 'purpura_tans', 0)
-if g:purpura_tans
+let g:purpura_tans = get(g:, 'purpura_tans', 1)
+if g:purpura_tans == 1
   hi Normal ctermbg=NONE guibg=NONE
   hi NonText ctermbg=NONE guibg=NONE
   hi CursorLineNr ctermbg=NONE guibg=NONE
-  hi LineNr ctermbg=NONE guibg=NONE guifg=#690da1 
+  hi LineNr ctermbg=NONE guibg=#690da1 guifg=#690da1 
   hi EndOfBuffer ctermbg=NONE guibg=NONE
   hi SignColumn	ctermbg=NONE guibg=NONE
 endif
