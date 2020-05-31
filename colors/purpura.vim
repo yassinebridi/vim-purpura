@@ -1,6 +1,7 @@
 scriptencoding utf-8
 
 set background=dark
+
 hi clear
 if exists("syntax_on")
     syntax reset
@@ -26,6 +27,17 @@ fun! <sid>hi(group, fg, bg, attr, sp)
     exec "hi " . a:group . " guisp=" . a:sp.gui
   endif
 endfun
+
+" Transparent background
+let g:purpura_tans = get(g:, 'purpura_tans', 0)
+if g:purpura_tans
+  hi Normal ctermbg=NONE guibg=NONE
+  hi NonText ctermbg=NONE guibg=NONE
+  hi CursorLineNr ctermbg=NONE guibg=NONE
+  hi LineNr ctermbg=NONE guibg=NONE guifg=#690da1 
+  hi EndOfBuffer ctermbg=NONE guibg=NONE
+  hi SignColumn	ctermbg=NONE guibg=NONE
+endif
 
 " ------------------
 " Color definitions:
